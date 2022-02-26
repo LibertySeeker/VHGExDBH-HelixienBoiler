@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <ModMetaData>
-	<name>Helixien Gas Boiler [Dubs Bad Hygiene/Vanilla Furniture Expanded - Power]</name>
+	<name>Helixien Gas Boiler</name>
 	<author>CiXwOw</author>
 	<packageId>CiXwOw.HelixienBoiler</packageId>
-	<description>Adds a boiler for Dubs Bad Hygiene that uses Helixien Gas from VFE - Power.
+	<description>Adds a boiler for Dubs Bad Hygiene that uses Helixien Gas from Vanilla Furniture Expanded - Power.
 
 Also patches name of the existing gas boiler from DBH to chemfuel boiler.</description>
 	<supportedVersions>
