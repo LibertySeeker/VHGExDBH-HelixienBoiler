@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="BasedHeating" DBHLite="true">
+		<defName>HelixienGasBoiler</defName>
+		<label>helixien gas boiler</label>
+		<description>Produces a variable amount of heating units for radiators and hot water tanks. Manually controlled power setting. Can be controlled by thermostats.</description>
+		<graphicData>
+			<texPath>Things/Building/Heating/HelixienBoiler</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+		<blockWind>false</blockWind>
+		<castEdgeShadows>false</castEdgeShadows>
+		<pathCost>150</pathCost>
+		<size>(1,1)</size>
+		<costList>
+			<Steel>80</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>125</MaxHitPoints>
+			<WorkToBuild>2000</WorkToBuild>
+			<Mass>50</Mass>
+		</statBases>
+		<comps>
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+			<li Class="DubsBadHygiene.CompProperties_Pipe">
+				<mode>Sewage</mode>
+			</li>
+			<li Class="GasNetwork.CompProperties_GasTrader">
+				<compClass>GasNetwork.CompGasTrader</compClass>
+				<gasConsumption>25</gasConsumption>
+			</li>
+			<li Class="HelixienBoiler.CompProperties_CompBoilerHelixien">
+				<BaseCapacity>250</BaseCapacity>
+				<GizmoLabel>Gas Mode</GizmoLabel>
+				<LowPowerMode>2</LowPowerMode>
+				<ThermostatControl>true</ThermostatControl>
+				<effects>
+					<texPath>Things/Building/Heating/HelixienBoilerEffects</texPath>
+					<graphicClass>DubsBadHygiene.Graphic_FX</graphicClass>
+					<shaderType>MoteGlow</shaderType>
+					<drawSize>(2,2)</drawSize>
+				</effects>
+			</li>
+			<li Class="CompProperties_Flickable">
+				<commandTexture>Things/Special/Fluid/VPE_OverlayBase</commandTexture>
+				<commandLabelKey>Fluffy.GasNetwork.CommandToggleGas.Label</commandLabelKey>
+				<commandDescKey>Fluffy.GasNetwork.CommandToggleGas.Desc</commandDescKey>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<researchPrerequisites>
+			<li MayRequire="dbhlitemode">CentralHeating</li>
+			<li>VFE_GasExtraction</li>
+		</researchPrerequisites>
+	</ThingDef>
+</Defs>

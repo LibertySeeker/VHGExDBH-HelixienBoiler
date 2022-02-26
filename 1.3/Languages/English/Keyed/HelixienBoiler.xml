@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<HeatingModeHelixien>Heating units/gas: {0} U / {1} m3/d</HeatingModeHelixien>
+	<LowerHelixien>Reduce gas</LowerHelixien>
+	<RaiseHelixien>Increase gas</RaiseHelixien>
+</LanguageData>
