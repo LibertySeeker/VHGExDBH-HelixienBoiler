@@ -4,24 +4,24 @@
 	<name>Helixien Gas Boiler</name>
 	<author>CiXwOw</author>
 	<packageId>CiXwOw.HelixienBoiler</packageId>
-	<description>Adds a boiler for Dubs Bad Hygiene that uses Helixien Gas from Vanilla Furniture Expanded - Power.
+	<description>Adds a boiler for Dubs Bad Hygiene that uses gas from Vanilla Helixen Gas Expanded.
 Now also supports Dubs Central Heating! Can be used with Bad Hygiene, Central Heating, or BOTH!
 
 Also patches name of the existing gas boiler from DBH to chemfuel boiler.</description>
 	<supportedVersions>
 		<li>1.3</li>
+		<li>1.4</li>
     </supportedVersions>
 	<modDependencies>
 		<li>
-			<packageId>VanillaExpanded.VFEPower</packageId>
-			<displayName>Vanilla Furniture Expanded - Power</displayName>
-			<steamWorkshopUrl>steam://url/CommunityFilePage/2062943477</steamWorkshopUrl>
-			<downloadUrl></downloadUrl>
+			<packageId>VanillaExpanded.HelixienGas</packageId>
+			<displayName>Vanilla Helixien Gas Expanded</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2877699803</steamWorkshopUrl>
 		</li>
 	</modDependencies>
 	<loadAfter>
 		<li>Dubwise.DubsBadHygiene</li>
 		<li>Dubwise.DubsCentralHeating</li>
-		<li>VanillaExpanded.VFEPower</li>
+		<li>VanillaExpanded.HelixienGas</li>
 	</loadAfter>
 </ModMetaData>
