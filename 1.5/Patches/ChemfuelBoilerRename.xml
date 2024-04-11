@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Dubs Bad Hygiene</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName="GasBoiler"]/label</xpath>
+			<value>
+				<label>chemfuel boiler</label>
+			</value>
+		</match>
+	</Operation>
+</Patch>
